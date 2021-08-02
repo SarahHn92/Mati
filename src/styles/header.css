@@ -1,0 +1,18 @@
+.headerImg {
+    width: 100%;
+    opacity: 0.8;
+    left: 0;
+    z-index: 1;
+    max-height: 650px;
+}
+
+.title {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.t1 {
+    font-family: 'Style Script', cursive;
+    font-size: 80px;
+    color: #DADADA;
+}

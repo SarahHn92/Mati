@@ -1,6 +1,6 @@
 import React from 'react';
 import Photo from'../../../Assets/babycrop.png';
-// import '../../styles/Header.css';
+import '../../../styles/header.css'
 
 
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
                 <img className="headerImg" src={Photo} alt="newborn hand"></img>
             </div>
             <div className="title">
-                <h1 className="t2">Mati</h1> 
+                <h1 className="t1">Mati</h1> 
             </div>  
         </header>
     )
