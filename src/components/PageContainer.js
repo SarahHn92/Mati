@@ -28,8 +28,8 @@ function PageContainer() {
     return (
         <main>
             <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-            {/* {renderPage()}
-            <Footer /> */}
+            {renderPage()}
+            {/* <Footer /> */}
         </main>
     );
 }
