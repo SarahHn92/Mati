@@ -1,5 +1,7 @@
 import React from 'react';
-import '../styles/nav.css'
+import '../styles/nav.css';
+
+// NEED TO SWAP to like example in Wk20/17-18
 
 function Nav({ currentPage, handlePageChange }) {
     return (

@@ -47,7 +47,6 @@ function Signup() {
   };
     return (
         <div>
-            <p>Hello {userName}</p>
             <form className="form">
                 <input
                 value={email}
