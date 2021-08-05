@@ -13,12 +13,12 @@ function Home() {
                         <h5>About this project:</h5>
                     </div>
                     <div>
-                        <p class="p1">
+                        <p className="p1">
                             This site aims to create a safe space to record your experiences and 
                             learning throughout your antenatal time, including pre-conception,
                             pregnancy, and the postnatal period.
                         </p>
-                        <p class="p1">
+                        <p className="p1">
                             Studies show that the process of educating yourself around the birth process, and the building
                             of a strong support network for your labour have positive correlations to having better outcomes
                             and a more positive experience. Arming yourself with this knowledge and seeking out support gives

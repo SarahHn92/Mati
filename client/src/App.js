@@ -13,7 +13,6 @@ import Nav from './components/Nav';
 import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import Dash from './components/pages/Dash/Dash';
-import Footer from './components/Footer';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -54,7 +53,6 @@ function App() {
               <Dash />
             </Route>
           </div>
-          <Footer />
         </div>
       </Router>
     </ApolloProvider>
