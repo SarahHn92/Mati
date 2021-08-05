@@ -31,6 +31,41 @@ const resolvers = {
             const token = signToken(user);
 
             return { token, user };
+        },
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
+
+            if (!user) {
+                throw new AuthenticationError('These details are not assigned to a current user. Please sign up!');
+            }
+
+            
+            const correctPw = await user.isCorrectPassword(password);
+
+            if (!correctPw) {
+                throw new AuthenticationError('Incorrect credentials');
+            }
+
+            const token = signToken(user);
+
+            return { token, user };
+        },
+        addNote: async (parent, { noteBody }, context) => {
+            if (context.user) {
+                const note = await Note.create({
+                    noteBody
+                });
+
+                await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $addToSet: { notes: note._id } }
+                );
+
+                return note;
+            }
+            throw new AuthenticationError('Please log in!')
         }
     }
-}
+};
+
+module.exports = resolvers;
