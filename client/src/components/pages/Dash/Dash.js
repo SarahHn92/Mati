@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DashHeader from './DashHeader';
 // import DashAffirm from './DashAffirm';
-import DashNotes from './DashNotes';
+// import DashNotes from './DashNotes';
 
 
 function Dash() {
@@ -9,12 +10,15 @@ function Dash() {
         <section>
             <div>
                <DashHeader />
-                {/* <DashAffirm/> */}
-                <DashNotes /> 
             </div>
             <div>
-
+                <Link id="notepad" className="notepad" to="/addNote">
+                    {<i className="fas fa-clipboard"></i>}
+                </Link>
             </div>
+            {/* <div>
+                <DashNotes />
+            </div> */}
             
         </section>
     )

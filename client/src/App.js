@@ -49,9 +49,9 @@ function App() {
             <Route exact path="/login">
               <Login />
             </Route>
-            {/* <Route exact path="/dash">
+            <Route exact path="/dash">
               <Dash />
-            </Route> */}
+            </Route>
           </div>
         </div>
       </Router>
