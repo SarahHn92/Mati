@@ -5,6 +5,7 @@ import DashHeader from './DashHeader';
 // import DashAffirm from './DashAffirm';
 import DashNotes from './DashNotes';
 import { QUERY_NOTES } from '../../../utils/queries';
+import '../../../styles/dash.css';
 
 
 const Dash = () => {
@@ -12,11 +13,11 @@ const Dash = () => {
     const notes = data?.thoughts || [];
 
     return (
-        <section>
-            <div>
+        <section className="dashSection">
+            <div className="header">
                <DashHeader />
             </div>
-            <div>
+            <div className="addNoteLink">
                 <Link id="notepad" className="notepad" to="/addNote">
                     {<i className="fas fa-clipboard"></i>}
                 </Link>

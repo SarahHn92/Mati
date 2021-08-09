@@ -26,6 +26,9 @@ function Nav() {
                             <Link id="dash-nav" className="dash navLink" to="/dash">
                                 Dashboard
                             </Link>
+                            <Link id="notepad" className="notepad" to="/addNote">
+                                Notepad
+                            </Link>
                             <button className="logoutBtn" onClick={logout}>
                                 Logout
                             </button>

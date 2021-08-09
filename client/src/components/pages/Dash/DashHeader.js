@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../../styles/dash.css';
 
 function DashHeader() {
     return (
         <>
-            <header>
+            <header className="header">
                 <div className="h1Container">
                    <h1 className="title"> Birth is normal and natural. </h1> 
                 </div>
