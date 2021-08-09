@@ -15,7 +15,7 @@ function Nav() {
             <nav className="toolbar">
                 <div className="left">
                     <Link id="logo" className="homeLogo" to="/">
-                        {<i class="fab fa-houzz"></i>}
+                        {<i className="fab fa-houzz"></i>}
                     </Link>
                 </div>
                                
