@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 const addNote = () => {
-    const [note, setNote] = useState('');
+    // const [note, setNote] = useState('');
     return (
         <section className="addNote">
             <h2 className="addNoteHeader">Take some time to journal your thoughts on what you've learnt.</h2>

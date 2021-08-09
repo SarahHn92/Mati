@@ -25,7 +25,7 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_NOTE = gql`
-  mutation addNote($thoughtText: String!) {
+  mutation addNote($noteBody: String!) {
     addNote(noteBody: $noteBody) {
       _id
       noteBody

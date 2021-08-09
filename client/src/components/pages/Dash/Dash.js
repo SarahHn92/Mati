@@ -11,7 +11,7 @@ import '../../../styles/dash.css';
 const Dash = () => {
     const { loading, data } = useQuery(QUERY_NOTES);
     const notes = data?.thoughts || [];
-
+    console.log(notes);
     return (
         <section className="dashSection">
             <div className="header">
