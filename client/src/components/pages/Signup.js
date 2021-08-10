@@ -50,7 +50,7 @@ const Signup = () => {
             {data ? (
               <p>
                 Success! You may now head{' '}
-                <Link to="/dash">back to the dashboard.</Link>
+                <Link to="/dash">to the dashboard.</Link>
               </p>
             ) : (
               <>
