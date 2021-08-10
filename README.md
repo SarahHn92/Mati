@@ -24,9 +24,9 @@
 
   ## Screenshots
 
-  ![Homepage](./Project1Scrnsht1.png)
+  ![Homepage](./Assets/Project1Scrnsht1.png)
 
-  ![Dashboard](./Project1Scrnsht2.png)
+  ![Dashboard](./Assets/Project1Scrnsht2.png)
   
   
   ## Installation
