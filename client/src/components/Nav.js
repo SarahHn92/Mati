@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../styles/nav.css';
 import Auth from '../utils/auth';
 
-// NEED TO SWAP to like example in Wk20/17-18
 
 function Nav() {
     const logout = (event) => {
@@ -20,14 +19,10 @@ function Nav() {
                 </div>
                                
                 <div className="nav-items right">
-                    {/* <ul> */}
                     {Auth.loggedIn() ? (
                         <>
                             <Link id="dash-nav" className="dash navLink" to="/dash">
                                 Dashboard
-                            </Link>
-                            <Link id="notepad" className="notepad" to="/addNote">
-                                Notepad
                             </Link>
                             <button className="logoutBtn" onClick={logout}>
                                 Logout

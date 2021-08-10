@@ -4,7 +4,7 @@ const DashNotes = ({
     notes
 }) => {
     if (!notes.length) {
-        return <h2> You haven't written any notes yet. Click the clipboard to get started! </h2>
+        return <h2> You haven't written any notes yet. Get writing and jot down some thoughts! </h2>
     }
 
     return (

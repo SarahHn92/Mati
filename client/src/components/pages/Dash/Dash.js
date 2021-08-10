@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import DashHeader from './DashHeader';
-// import DashAffirm from './DashAffirm';
+import AddNote from './addNote';
 import DashNotes from './DashNotes';
 import { QUERY_NOTES } from '../../../utils/queries';
 import '../../../styles/dash.css';
@@ -18,9 +18,7 @@ const Dash = () => {
                <DashHeader />
             </div>
             <div className="addNoteLink">
-                <Link id="notepad" className="notepad" to="/addNote">
-                    {<i className="fas fa-clipboard"></i>}
-                </Link>
+                <AddNote  />
             </div>
             <div className="notesContainer">
                 {loading ? (
