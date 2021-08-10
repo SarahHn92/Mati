@@ -28,8 +28,8 @@ export const ADD_NOTE = gql`
   mutation addNote($noteBody: String!) {
     addNote(noteBody: $noteBody) {
       _id
-      noteBody
       date_created
+      noteBody
     }
   }
 `;

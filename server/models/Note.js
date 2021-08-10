@@ -5,7 +5,7 @@ const noteSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    note_body: {
+    noteBody: {
         type: String,
         required: 'Journalling is required.',
         minlength: 1,

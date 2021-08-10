@@ -19,8 +19,8 @@ export const QUERY_NOTES = gql`
     query getNotes {
         notes {
             _id
-            noteBody
             date_created
+            noteBody
         }
     }
 `;

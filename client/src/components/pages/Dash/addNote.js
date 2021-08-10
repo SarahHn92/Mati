@@ -15,12 +15,20 @@ const AddNote = () => {
             const data = await addNote({
                 variables: { noteBody: note }
             });
+            console.log(data);
             setNote('');
         } catch (err) {
             console.error(err);
         }
     };
 
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+    
+        if (name === 'note') {
+          setNote(value);
+        }
+      };
     
 
     return (
@@ -30,12 +38,13 @@ const AddNote = () => {
                 <>
                     <form className="form" onSubmit={handleFormSubmit}>
 
-                        <div class="col-8">
+                        <div className="col-8">
                             <input 
+                                name="note"
                                 value={note}
                                 className="note-textarea" 
                                 placeholder="Note Text"
-                                onChange={(event) => setNote(event.target.value)}
+                                onChange={handleChange}
                                 >
                             </input>
                         </div>

@@ -12,7 +12,7 @@ const typeDefs = gql`
     type Note {
         _id: ID
         date_created: String
-        note_body: String
+        noteBody: String
     }
 
     type Auth {
@@ -31,7 +31,7 @@ const typeDefs = gql`
     type Mutation {
         addUser(username: String, email: String, password: String): Auth
         login(email: String!, password: String!): Auth
-        addNote(note_body: String!): Note
+        addNote(noteBody: String!): Note
     }
 `;
 
