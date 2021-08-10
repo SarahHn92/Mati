@@ -10,16 +10,18 @@ const AddNote = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-
+        console.log(note);
         try {
             const data = await addNote({
-                variables: { note }
+                variables: { noteBody: note }
             });
             setNote('');
         } catch (err) {
             console.error(err);
         }
     };
+
+    
 
     return (
         <section className="addNote">

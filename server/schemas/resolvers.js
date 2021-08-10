@@ -51,6 +51,7 @@ const resolvers = {
             return { token, user };
         },
         addNote: async (parent, { noteBody }, context) => {
+          console.log(noteBody);
             if (context.user) {
                 const note = await Note.create({
                     noteBody
