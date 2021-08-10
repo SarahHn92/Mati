@@ -18,7 +18,7 @@ function Nav() {
                     </Link>
                 </div>
                                
-                <div className="nav-items right">
+                <div className="nav-items-right">
                     {Auth.loggedIn() ? (
                         <>
                             <Link id="dash-nav" className="dash navLink" to="/dash">
