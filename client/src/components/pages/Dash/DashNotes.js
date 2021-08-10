@@ -9,7 +9,7 @@ const DashNotes = ()  => {
     
 
     return (
-        <section>
+        <section className="dashnotes">
             <div className="addNoteLink">
                 <AddNote  />
             </div>

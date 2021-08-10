@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_NOTE } from '../../../utils/mutations';
 import Auth from '../../../utils/auth';
+import '../../../styles/dash.css';
 
 
 const AddNote = () => {
@@ -43,14 +44,14 @@ const AddNote = () => {
                                 name="note"
                                 value={note}
                                 className="note-textarea" 
-                                placeholder="Note Text"
                                 onChange={handleChange}
                                 >
                             </input>
+                            <div>
+                                <button className="submit" type="submit">Save note.</button>
+                            </div>
                         </div>
-                        <div>
-                            <button className="" type="submit">Save note.</button>
-                        </div>
+                        
                         {error && (
                             <div className="">
                             {error.message}

@@ -8,10 +8,45 @@
     align-items: center;
 } 
 
+.form {
+    display: block;
+    width: 100%;
+}
+
+.note-textarea {
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    width: 40%;
+    height: 200px;
+    border: none;
+}
+
+.submit {
+    text-align: center;
+    position: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .colours {
     color:thistle;
-    color:#aaaaaa;
     color: #748569;
+}
+
+h4 {
+    text-align: center;
+}
+
+.dashnotes {
+    text-align: center;
+}
+
+.addNote {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 

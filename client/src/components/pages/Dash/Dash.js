@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
-import DashHeader from './DashHeader';
+import Header from '../Home/Header';
 import DashNotes from './DashNotes';
 import { QUERY_USER, QUERY_ME } from '../../../utils/queries';
 import '../../../styles/dash.css';
@@ -20,7 +20,7 @@ const Dash = () => {
     return (
         <section className="dashSection">
             <div className="header">
-               <DashHeader />
+               <Header />
                <div>
                    {loading ? (
                         <p>Loading...</p>
