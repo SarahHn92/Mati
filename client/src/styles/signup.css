@@ -9,11 +9,14 @@ title {
 
 .card {
     width: 100%;
+    text-align: center;
 }
 
-.card-body {
+.form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 input {

@@ -5,6 +5,7 @@ import { LOGIN_USER } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 import Header from './Home/Header';
+import '../../styles/signup.css';
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -55,29 +56,34 @@ const Login = (props) => {
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
-                <input
-                  className="form-input"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
+                <div>
+                  <input
+                    className="form-input"
+                    placeholder="Your email"
+                    name="email"
+                    type="email"
+                    value={formState.email}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <input
+                    className="form-input"
+                    placeholder="******"
+                    name="password"
+                    type="password"
+                    value={formState.password}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <button
+                    className="btn btn-block btn-primary"
+                    style={{ cursor: 'pointer' }}
+                    type="submit">
+                    Submit
+                  </button>
+                </div>
               </form>
             )}
 

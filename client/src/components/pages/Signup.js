@@ -55,38 +55,45 @@ const Signup = () => {
             ) : (
               <>
                 <h1>Please enter your login details.</h1>
-                <form onSubmit={handleFormSubmit}>
-                  <input
-                    className="form-input"
-                    placeholder="Your username"
-                    name="username"
-                    type="text"
-                    value={formState.name}
-                    onChange={handleChange}
-                  />
-                  <input
-                    className="form-input"
-                    placeholder="Your email"
-                    name="email"
-                    type="email"
-                    value={formState.email}
-                    onChange={handleChange}
-                  />
-                  <input
-                    className="form-input"
-                    placeholder="******"
-                    name="password"
-                    type="password"
-                    value={formState.password}
-                    onChange={handleChange}
-                  />
-                  <button
-                    className="btn btn-block btn-primary"
-                    style={{ cursor: 'pointer' }}
-                    type="submit"
-                  >
-                    Submit
-                  </button>
+                <form className="form" onSubmit={handleFormSubmit}>
+                  <div>
+                    <input
+                      className="form-input"
+                      placeholder="Your username"
+                      name="username"
+                      type="text"
+                      value={formState.name}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div>
+                    <input
+                      className="form-input"
+                      placeholder="Your email"
+                      name="email"
+                      type="email"
+                      value={formState.email}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div>
+                    <input
+                      className="form-input"
+                      placeholder="******"
+                      name="password"
+                      type="password"
+                      value={formState.password}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div>
+                    <button
+                      className="btn btn-block btn-primary"
+                      style={{ cursor: 'pointer' }}
+                      type="submit">
+                      Submit
+                    </button>
+                  </div>
                 </form>
               </>
             )}
